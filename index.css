@@ -1,0 +1,324 @@
+*{
+  box-sizing:   border-box  ;
+}
+html{
+  margin: 0;
+  padding: 0;
+  background: black;
+  scroll-behavior: smooth;
+  max-width: 100%;
+}
+
+body{
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  background: black;
+	font-family: 'Anton', sans-serif;
+  font-family: 'Climate Crisis', cursive;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Rubik Iso', cursive;
+  font-family: 'Zilla Slab', serif;
+}
+
+
+/*SIDE NAV BAR*/
+.sidenav {
+  height: 100%; 
+  width: 150px; 
+  position: fixed; 
+  z-index: 3; 
+  top: 0; 
+  left: 0;
+  background: rgb(0, 0, 0, 0);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  border-right: 1px solid gray;
+}
+
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  margin-bottom: 15px;
+  text-decoration: none;
+  font-size: 25px;
+  color: whitesmoke;
+  display: block;
+  font-family:'Rubik Iso', cursive;
+}
+
+/* move animation upon hover*/
+.sidenav a:hover {
+  color: whitesmoke;
+  margin-left: 20px;
+}
+/*END OF NAV BAR*/
+
+
+
+/*START OF HOME PAGE*/
+.main{
+  background: black;
+}
+
+.home_sc{
+  position: relative;
+  top: 0;
+  min-height: 50vh;
+  min-width: 100%;
+  background-size: cover;
+  display: block;
+  background-image: url(https://e0.pxfuel.com/wallpapers/846/344/desktop-wallpaper-portfolio.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-attachment: scroll;
+}
+#home{
+  padding-left: 0px;
+  min-height: 100vh;
+}
+
+#home_txt{
+  width: fit-content;
+  max-height: 50vh;
+  color: whitesmoke;
+  font-family: 'Anton', sans-serif;
+  position: relative;
+  padding-left: 180px;
+  letter-spacing: 2px;
+
+}
+
+/*Name*/
+#devname{
+  width: auto;
+  padding-top: 30px;
+  font-size: 5rem;
+}
+/*Role*/
+#role{
+  font-family: 'Rubik Iso', cursive;
+  font-size: 3rem;
+}
+
+#quote{
+  color: whitesmoke;
+  font-size: 20px;
+  text-align: left;
+  margin-top: 5rem;
+  width: fit-content;
+  padding-bottom: 20px;
+}
+
+/*END OF HOME PAGE*/
+
+
+/*ABOUT ME SECTION*/
+#about_me{
+
+  text-align: center;
+  padding-left: 100px;
+  width: 100%;
+  color: whitesmoke;
+}
+#info_cont{
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+  padding-left: 150px;
+}
+.info_me{
+  font-family: 'Anton', sans-serif;
+}
+.me_text{
+  width: auto;
+}
+
+.me_text h1{
+  color: #e76f51;
+  font-family: 'Rubik Iso', cursive;
+  font-size: 3rem;
+}
+/*END OF ABOUT ME SECTION*/
+
+
+
+/*My Projects Section start*/
+#page_2{
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+/*development stack*/
+#stacks{
+  width: auto;
+  padding-left: 150px;
+}
+.stack, .stack2{
+  font-family: 'Montserrat', sans-serif;
+  border-top: 1px solid dimgray;
+  border-top: 1px solid dimgray;
+  font-size: 4vh;
+  letter-spacing: 2px;
+}
+.stack{
+  border-bottom: 1px solid dimgray ;
+}
+
+/*projects*/
+.proj_desc{
+  font-family: 'Zilla Slab', serif;
+}
+
+#proj{
+  margin-left: 150px;
+}
+#proj_sec{
+  padding-left: 150px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(https://www.pixelstalk.net/wp-content/uploads/images6/Aesthetic-Moon-Wallpaper-Dark-Night.jpg);
+}
+#proj_sec h3{
+  font-family: 'Rubik Iso', cursive;
+  color: whitesmoke;
+  font-size: 3rem;
+}
+
+/*My Projects Section End*/
+
+
+
+/*Tools Section*/
+#tools{
+  padding-left: 150px;
+  background-blend-mode: normal;
+  margin-top: 20vh;
+  margin-bottom: 10vh;
+}
+#tools h3{
+  font-family: 'Rubik Iso', cursive;
+  color: #e76f51;
+  font-size: 3rem;
+
+}
+.tools_img{
+  width: 100px;
+}
+
+/*Tool Section End*/
+
+
+/*Contact Section Start*/
+#contact_f{
+  margin-left: 150px;
+}
+.contact_t{
+  font-family: 'Rubik Iso', cursive;
+  color: #e76f51;
+  font-size: 2rem;
+}
+.form-control{
+  display: block;
+  width: auto;
+  font-size: 1rem;
+}
+.form-group{
+  color: black;
+}
+#form_color{
+  background-color: #e7d8c9;
+}
+
+/*Contact Section End*/
+.footer{
+  background-color: #e76f51;
+  text-align: center;
+}
+
+
+
+
+
+/*MOBILE RESPONSIVENESS*/
+/* On smaller screens, where width is less than 475px, change the style of the sidebar and minimize fonts */
+@media (max-width: 600px){
+
+  .main{
+    padding: 0px;
+    font-size: 1rem;
+  }
+  .sidenav {
+    height: auto;
+    padding-top: 15px;
+    width: auto;
+    border-bottom: 1px solid gray;
+
+  }
+  .sidenav a {font-size: 13px;}
+
+  .main{
+    padding-left: 0px;
+  }
+  .home_sc{
+    min-height: 100vh;
+    background-position: center;
+  }
+  #about_me{
+    min-height: 100vh;
+    padding-left: 15px;
+
+  }
+
+  #devname{
+    font-size: 30px;
+  }
+  #role{
+    font-size: 20px;
+  }
+
+  #home_txt{
+    margin-top: 30vh;
+    padding-left: 0px;
+    text-align: left;
+  }
+  #quote{
+    margin-top: 40px;
+    margin-right: 0px;
+    width: fit-content;
+    font-size: 10px;
+  }
+  .stack, .stack2{
+    padding: 0px;
+  }
+  #stacks{
+  padding-left: 0px;
+  padding-right: 0px;
+  }
+
+  #info_cont{
+  padding-left: 0px;
+}
+
+  #proj_sec{
+    padding-left: 0px;
+  }
+  #proj_sec h3{
+    font-size: 2rem;
+  }
+  #tools {
+    padding-left: 0px;
+  }
+  #tools h3{
+    font-size: 2rem;
+  }
+  #contact_f{
+  margin-left: 0px;
+  padding-left: 0px;
+  }
+
+  #cont{
+    padding-left: 0px;
+  }
+
+}
